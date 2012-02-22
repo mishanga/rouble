@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Знак рубля</title>
+        <link rel="shortcut icon" href="/favicon.ico"/>
+        <style>
+            body {
+                font: 0.8em Arial, Helvetica, sans-serif;
+
+                margin: 0;
+                padding: 0;
+
+                color: #333;
+                background: #fff;
+            }
+
+            h1, h2, h3, h4, h5, h6
+            {
+                font-weight: normal;
+
+                margin: 0 0 20px;
+            }
+
+            big
+            {
+                font-size: 16px;
+
+                display: block;
+
+                margin: 0 0 1em;
+
+                color: #999;
+            }
+
+            h1 { font-size: 100px; }
+            h2 { font-size: 50px; }
+            h3 { font-size: 30px; }
+            h4 { font-size: 16px; }
+            h5 { font-size: 13px; }
+            h6 { font-size: 11px; }
+
+            b
+            {
+                font-weight: bold;
+            }
+
+            .layout
+            {
+                padding: 60px;
+            }
+
+            .b-rur
+            {
+                font-weight: normal !important;
+
+                position: relative;
+
+                vertical-align: top;
+                text-transform: uppercase;
+            }
+
+            .b-rur__point
+            {
+                display: none;
+            }
+
+            .b-rur:before,
+            * html .b-rur__before
+            {
+                content: '-';
+                font-size: 90%;
+
+                position: absolute;
+                left: -0.035em;
+            }
+
+            .b-rur:after,
+            * html .b-rur__point
+            {
+                content: '\2013';
+
+                display: block;
+
+                position: absolute;
+                top: 0.09em;
+                left: 0;
+            }
+
+            * html .b-rur
+            {
+                zoom: expression(function(b){
+                    b.innerHTML = '<span class="b-rur__before">-</span>' + b.innerHTML;
+                    b.style.zoom = 1;
+                })(this);
+            }
+
+            * html .b-rur__point
+            {
+                zoom: expression(function(b){
+                    b.innerHTML = '\2013';
+                    b.style.zoom = 1;
+                })(this);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <big>Proof of concept:</big>
+            <h1>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h1>
+            <h2>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h2>
+            <h3>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h3>
+            <h4>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h4>
+            <h5>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h5>
+            <h6>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h6>
+        </div>
+    </body>
+</html>
