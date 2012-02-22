@@ -15,13 +15,6 @@
                 background: #fff;
             }
 
-            h1, h2, h3, h4, h5, h6
-            {
-                font-weight: normal;
-
-                margin: 0 0 20px;
-            }
-
             big
             {
                 font-size: 16px;
@@ -33,13 +26,6 @@
                 color: #999;
             }
 
-            h1 { font-size: 100px; }
-            h2 { font-size: 50px; }
-            h3 { font-size: 30px; }
-            h4 { font-size: 16px; }
-            h5 { font-size: 13px; }
-            h6 { font-size: 11px; }
-
             b
             {
                 font-weight: bold;
@@ -50,8 +36,48 @@
                 padding: 60px;
             }
 
+            .price { line-height: 1.3; margin-bottom: 5px; }
+            .price_size_s {
+                font-size: 11px;
+                font-family: Verdana, Arial, sans-serif;
+            }
+            .price_size_m { font-size: 13px; }
+            .price_size_l { font-size: 15px; }
+            .price_size_xl { font-size: 19px; }
+
+            .button {
+                float: left;
+
+                margin: 0 5px;
+                padding: 1px 9px;
+
+                background: #ccc;
+                border-radius: 3px;
+            }
+
+            .button_size_s
+            {
+                font: 11px/21px Verdana, Arial, sans-serif;
+            }
+
+            .button_size_m
+            {
+                font: 13px/25px Arial, sans-serif;
+            }
+
+            .button_size_l
+            {
+                font: 15px/29px Arial, sans-serif;
+            }
+
+            .button_size_xl
+            {
+                font: 19px/36px Arial, sans-serif;
+            }
+
             .b-rur
             {
+                font-family: Arial, sans-serif !important;
                 font-weight: normal !important;
 
                 position: relative;
@@ -107,12 +133,15 @@
     <body>
         <div class="layout">
             <big>Proof of concept:</big>
-            <h1>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h1>
-            <h2>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h2>
-            <h3>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h3>
-            <h4>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h4>
-            <h5>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h5>
-            <h6>Цена: <b>1 048 576</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></h6>
+            <div class="price price_size_s">11px — Цена: <b>256</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <div class="price price_size_m">13px — Цена: <b>512</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <div class="price price_size_l">15px — Цена: <b>1024</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <div class="price price_size_xl">19px — Цена: <b>2048</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <br>
+            <div class="button button_size_s">11px — Цена: <b>256</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <div class="button button_size_m">13px — Цена: <b>512</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <div class="button button_size_l">15px — Цена: <b>1024</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
+            <div class="button button_size_xl">19px — Цена: <b>2048</b> <span class="b-rur">р<span class="b-rur__point">.</span></span></div>
         </div>
     </body>
 </html>
